@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Responsivo com Cabeçalho e Rodapé</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Estilos para o cabeçalho */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Estilos para a imagem do cabeçalho */
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Estilos para os retângulos */
+        .rectangle {
+            width: 200px;
+            height: 100px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .rectangle:hover {
+            background-color: #2980b9;
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilos para conteúdo principal */
+        .content {
+            padding: 20px;
+            text-align: center;
+            margin-top: 120px; /* Ajuste conforme a altura do cabeçalho + espaço adicional */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Estilos para tornar responsivo */
+        @media only screen and (max-width: 600px) {
+            /* Para telas menores que 600px de largura */
+            .content {
+                padding: 10px;
+                margin-top: 150px; /* Ajuste conforme necessário */
+            }
+
+            .rectangle {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://cdn.awsli.com.br/400x300/1639/1639409/logo/logo-de-natal-1cry7rra7r.png" alt="Logo de Natal">
+    </header>
+
+    <div class="content">
+        <div class="rectangle">
+            <a href="https://www.example.com/gestao-click" target="_blank" rel="noopener noreferrer">GestãoClick</a>
+        </div>
+        <div class="rectangle">
+            <a href="https://www.example.com/email" target="_blank" rel="noopener noreferrer">Email</a>
+        </div>
+        <div class="rectangle">
+            <a href="https://www.example.com/carteira-de-vendas" target="_blank" rel="noopener noreferrer">Carteira de Vendas</a>
+        </div>
+        <div class="rectangle">
+            <a href="https://www.example.com/finacenrio" target="_blank" rel="noopener noreferrer">Finacenrio</a>
+        </div>
+        <div class="rectangle">
+            <a href="https://www.example.com/contas-a-receber" target="_blank" rel="noopener noreferrer">Contas a Receber</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Exemplo de Site Responsivo. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
